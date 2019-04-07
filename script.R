@@ -1,5 +1,6 @@
 library(DESeq2)
 
+# this will eventually become a special DESeq() call...
 deseq_large_dim <- function(dds) {
   dds <- estimateSizeFactors(dds)
   dds <- getBaseMeansAndVariances(dds)
